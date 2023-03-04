@@ -30,6 +30,7 @@ function App() {
       <Row>
         <Col>
           <h3 style={{"text-align":"center;"}}>Abdulaziz Alabduljalil</h3>
+          <p><a href="https://github.com/Wazyre">Github</a> - <a href="https://www.linkedin.com/in/abdulaziz-alabduljalil/">LinkedIn</a></p>
         </Col>
       </Row>
       <Row>
