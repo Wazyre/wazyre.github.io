@@ -1,0 +1,296 @@
+//Overrides for bootstrap elements
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover,
+.form-check-input:checked,
+.show>.btn-primary.dropdown-toggle {
+  background-color: #00203FFF;
+  border-color: #00203FFF;
+}
+
+.btn-primary:active {
+  background-color: #001a33;
+  border-color: #001a33;
+}
+
+.btn-primary:disabled {
+  background-color: #003566;
+  border-color: #003566;
+}
+
+.btn-primary:focus,
+.page-link:focus {
+  box-shadow: 0 0 0 0.25rem rgba(64, 96, 128, 0.25);
+}
+
+.dropend .dropdown-toggle::after {
+  display: none;
+}
+
+.form-check-input:focus,
+.form-control:focus {
+  border-color: #406080;
+  box-shadow: 0 0 0 0.25rem rgba(64, 96, 128, 0.25);
+}
+
+.page-link {
+  color: #00203FFF;
+}
+
+.page-link:hover,
+.navbar-light .navbar-toggler {
+  color: #ADEFD1FF;
+}
+
+.page-item.active .page-link {
+  background-color: #00203FFF;
+  border-color: #00203FFF;
+}
+
+
+//Custom elements
+.contentContainer {
+  width: inherit;
+  min-width: 550px;
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 10px 20px 0;
+  margin: 0 10px;
+  overflow-x: hidden;
+}
+
+.rightSideCard {
+  width: 100%;
+  max-width: 240px;
+  padding: 5px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.fullCard {
+  width: 100%;
+  padding: 20px 0px 0px 20px;
+  margin: 10px 0px;
+}
+
+.contentContainer Form {
+  width: 100%;
+  max-width: 760px;
+}
+
+.contentContainer .card:not(.rightSideCard, .fullCard) {
+  padding: 20px 0px 0px 20px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 760px;
+}
+
+.contentContainer .row {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contentContainer .col {
+  margin: 5px 5px;
+  width: 100%;
+  max-width: 760px;
+}
+
+.contentFaqList [class~='Listgroup.Item'] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contentCardHeader {
+  padding: 5px;
+  background-color: white;
+}
+
+.contentTable {
+  width: 90vw;
+  font-size: 11pt;
+  max-height: 600px;
+  display: block;
+  overflow-x: auto;
+}
+
+.contentTableHead {
+  text-align: center;
+  position: sticky;
+  font-size: 12pt;
+}
+
+.contentLink {
+  font-size: 11pt;
+}
+
+.contentBtn {
+  font-size: 12pt;
+}
+
+.contentAddBtn {
+  border: 1px solid black;
+  margin: 0 0 20px;
+  padding: 5px 8px;
+}
+
+.contentRemoveBtn {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 40px 0;
+  padding: 0 8px;
+}
+
+.contentNavLink {
+  color: black;
+  padding: 16px 4px;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.contentLink {
+  color: black;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.contentP {
+  font-weight: bold;
+}
+
+.contentSelect {
+  margin: 0 0 20px;
+}
+
+.contentContainer h4 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.contentContainer *:not(h4, .numberDigit, .numbers, .numberHolder) {
+  font-family: 'Montserrat';
+}
+
+.fontBold {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.fontNorm {
+  font-family: 'Montserrat';
+}
+
+.reportCol .row {
+  width: fit-content;
+}
+
+.reportCol .col {
+  width: auto;
+  margin: 10px 0px;
+  padding: 0px 5px;
+}
+
+.reportRow {
+  width: fit-content;
+}
+
+.reportRow .col {
+  width: min-content;
+  padding: 0px 5px;
+}
+
+.appCol {
+  width: auto;
+  margin: 10px 0px;
+  padding: 0px 5px;
+}
+
+.imrt {
+  color: red;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.edit,
+.view {
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+.edit:hover {
+  color: #CDB599FF;
+}
+
+.edit:hover:active,
+.edit:focus {
+  color: #7A6C5B;
+}
+
+.view:hover {
+  color: #42EADDFF;
+}
+
+.view:hover:active,
+.view:focus {
+  color: #29948C;
+}
+
+
+//Mobile overrides
+@media only screen and (max-width: 767px) {
+
+  //Overrides for bootstrap elements
+  h4 {
+    font-size: 18px;
+  }
+
+  .card .input-group {
+    width: 90%;
+  }
+
+  .card .table {
+    width: 90%;
+  }
+
+
+  //Custom elements
+  .contentTable {
+    overflow-x: scroll;
+  }
+
+  .rightSideCard {
+    max-width: 1000px;
+    margin-right: auto;
+  }
+
+  .contentContainer .card {
+    width: 85vw;
+    min-width: 85%;
+  }
+
+  .contentContainer .row:not(.reportRow) {
+    width: 90vw;
+    min-width: 90%;
+  }
+
+  .contentContainer .col:not(.reportRow .col) {
+    margin: 10px 0px;
+    width: 100%;
+  }
+
+  .contentContainer {
+    width: 90vw;
+    min-width: 90%;
+    overflow-x: hidden;
+  }
+}
