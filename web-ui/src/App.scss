@@ -49,6 +49,10 @@
 
 
 //Custom elements
+.centerHeader {
+  text-align: "center";
+}
+
 .contentContainer {
   width: inherit;
   min-width: 550px;
@@ -89,14 +93,27 @@
   max-width: 760px;
 }
 
-.contentContainer .row {
+.contentContainer .row:not(.flexRow) {
   padding: 10px 0;
   width: 100%;
 }
 
-.contentContainer .col {
+.flexRow {
+  padding: 0px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.contentContainer .col:not(.listCol) {
   margin: 5px 5px;
   width: 100%;
+  max-width: 760px;
+}
+
+.listCol {
+  margin: 0px 5px;
+  width: 33%;
   max-width: 760px;
 }
 
